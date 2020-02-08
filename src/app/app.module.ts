@@ -5,14 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExampleComponent } from './example/example.component';
 
+import simpleParallax from 'simple-parallax-js';
+import { ParallaxDirective } from './parallax.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ExampleComponent
+    ExampleComponent,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    simpleParallax
   ],
   providers: [],
   bootstrap: [AppComponent]

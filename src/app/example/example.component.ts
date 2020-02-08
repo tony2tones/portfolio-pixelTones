@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./example.component.css']
 })
 export class ExampleComponent implements OnInit {
+  image = document.getElementsByClassName('thumbnail');
 
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }
